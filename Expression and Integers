@@ -1,0 +1,25 @@
+#Equivalent Resistance
+// Please write your solution here.
+#include <iostream>
+
+int main(){
+  int R1, R2, R3, R4; 
+  int R12, R34;
+  int R_tot;
+  int R_mod;
+  
+  std::cin >> R1;
+  std::cin >> R2;
+  std::cin >> R3;
+  std::cin >> R4;
+  
+  //Reihenschaltung von R1 und R2 / R3 und R4
+  R12 = R1 + R2;
+  R34 = R3 + R4;
+  
+  //Parallelschaltung von R12 und R34 mit Rundung
+  R_tot = ((R12 * R34)+ (R12 + R34)/2)  / (R12 + R34); //Der Rest wird vergelassen
+  R_mod = (R12 * R34) % (R12 + R34);
+  //
+  std::cout << R_tot;
+}
