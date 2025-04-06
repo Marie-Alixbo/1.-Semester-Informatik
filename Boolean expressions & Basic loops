@@ -1,0 +1,23 @@
+#Fibonacci primes
+int main() {
+  unsigned int m;
+  std::cin >> m;
+  unsigned int f1=1;
+  unsigned int f2=1; 
+  unsigned int count = 0;
+  for(; f2<m; ){
+    //Fibonacci Folge
+    unsigned int f12 = f1 + f2;
+    f1 = f2;
+    f2 = f12;
+    //assert(f2>m);
+    //ist f2 eine prime number (siehe is prime?)
+    unsigned int d=2;
+    for(;f2%d != 0 ; ++d);
+    if ((f2 == d) && (f2<=m)){
+      std::cout << f2 << "\n";
+      count += 1;
+    }
+  }
+  std::cout << "Found " << count << " Fibonnacci primes";
+}
