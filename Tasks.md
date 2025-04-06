@@ -8,6 +8,7 @@ Remark: In order to facilitate the task, you may want to:
 You can find formulas for computing the total resistance in this Wikipedia article.
 Important: using floating point numbers is forbidden.
 
+#************************************************************************************************************************************************************************************************************************
 
 Task of "Boolean expressions & Basic loops"\
 Fibonacci Primes:\
@@ -20,3 +21,10 @@ Example: If your program is asked to print the Fibonacci primes between 0 and 14
 13\
 Found 4 Fibonacci primes
 
+#************************************************************************************************************************************************************************************************************************
+
+Task of "Loops and Floats"
+Approximation of Pi:\
+????
+
+#************************************************************************************************************************************************************************************************************************
